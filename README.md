@@ -18,6 +18,8 @@
    - Utilizes a component-based architecture, making it easier to manage UI elements and their states.
    - Offers a declarative syntax, enhancing readability and maintainability of code.
      
+## Animated Data view
+https://github.com/Sandeep00022/netpuppy-assignment/assets/97525395/2977b500-8b29-427a-9516-fe1007ae2234
 
 ## Ui ScreenShots
 ![image](https://github.com/Sandeep00022/netpuppy-assignment/assets/97525395/05dc9df2-bcc6-4dba-b166-82302195a791)
@@ -27,9 +29,7 @@
 ![image](https://github.com/Sandeep00022/netpuppy-assignment/assets/97525395/aab7c7e3-1eff-4837-a7b5-90bf389ae1f3)
 
 
-## Animated Data view
 
-https://github.com/Sandeep00022/netpuppy-assignment/assets/97525395/2977b500-8b29-427a-9516-fe1007ae2234
 
 
 ## Small Screen Ui
