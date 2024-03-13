@@ -25,8 +25,10 @@ const Awards = () => {
           </h3>
           <h2 className=" text-3xl font-bold text-white ml-20">VIRTUAL TOUR</h2>
         </div>
-        <div className="absolute bottom-0 w-[90%] p-6 m-auto left-0 right-0 flex 
-           justify-center rounded-md bg-[#b90124] gap-3 -mb-20">
+        <div
+          className="absolute bottom-0 w-[90%] p-6 m-auto left-0 right-0 flex 
+           justify-center rounded-md bg-[#b90124] gap-3 -mb-40 sm:-mb-20 overflow:hidden"
+        >
           <div className="text-center text-white p-5 border-r border-white">
             <h2 className="text-3xl font-bold"> 100%</h2>
             <p className="text-xs">college Acceptance</p>
@@ -53,7 +55,7 @@ const Awards = () => {
               perseverance in flight.
             </h3>
             <p className="text-[#65bfbd] text-xl font-semibold">
-            (Everybody Loves that)
+              (Everybody Loves that)
             </p>
           </div>
           <div className="p-1 pt-9 relative">
@@ -146,7 +148,6 @@ const Awards = () => {
             SEE MORE
           </Button>
         </div>
-        <div></div>
       </div>
     </div>
   );

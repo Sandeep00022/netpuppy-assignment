@@ -6,7 +6,11 @@ export default {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        miltonian: ["Miltonian", "sans-serif", "Mirador"],
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

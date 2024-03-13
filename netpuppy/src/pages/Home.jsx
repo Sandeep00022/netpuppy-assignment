@@ -3,6 +3,7 @@ import Top from "../components/Top";
 import Youtube from "../components/Youtube";
 import WhyTis from "../components/WhyTis";
 import Awards from "../components/Awards";
+import Ranking from "../components/Ranking";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Youtube />
       <WhyTis />
       <Awards />
+      <Ranking/>
     </div>
   );
 };
