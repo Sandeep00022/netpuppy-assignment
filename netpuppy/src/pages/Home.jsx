@@ -5,6 +5,7 @@ import WhyTis from "../components/WhyTis";
 import Awards from "../components/Awards";
 import Ranking from "../components/Ranking";
 import Parents from "../components/Parents";
+import Collaboration from "../components/Collaboration";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Awards />
       <Ranking />
       <Parents />
+      <Collaboration />
     </div>
   );
 };
