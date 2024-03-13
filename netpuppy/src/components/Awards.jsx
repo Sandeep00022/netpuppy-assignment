@@ -1,9 +1,9 @@
 import React from "react";
 import blog from "../assets/awards/blog.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
-import image1 from "../assets/topImages/image1.png";
-import image2 from "../assets/topImages/image2.png";
-import image3 from "../assets/topImages/image3.png";
+import award1 from "../assets/awards/award1.png";
+import award2 from "../assets/awards/award2.png";
+import award3 from "../assets/awards/award3.png";
 import knowmore from "../assets/topImages/knowmore.png";
 import { Button } from "flowbite-react";
 const Awards = () => {
@@ -65,7 +65,7 @@ const Awards = () => {
             transition-opacity duration-300
             rounded-xl
             "
-              src={image1}
+              src={award3}
               alt=""
               // style={{ filter: "brightness(40%)" }}
             />
@@ -99,11 +99,11 @@ const Awards = () => {
             <div className="p-1 relative right-0 sm:right-6 mb-9">
               <img
                 className="block filter brightness-50 
-            hover:brightness-100 w-full h-auto 
+            hover:brightness-100 w-[900px] h-auto 
             transition-opacity duration-300
             rounded-xl
             "
-                src={image2}
+                src={award1}
                 alt=""
                 // style={{ filter: "brightness(40%)" }}
               />
@@ -121,7 +121,7 @@ const Awards = () => {
             transition-opacity duration-300
             rounded-xl
             "
-                src={image3}
+                src={award2}
                 alt=""
                 // style={{ filter: "brightness(40%)" }}
               />

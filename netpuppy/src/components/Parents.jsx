@@ -27,7 +27,7 @@ const Parents = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="">
         <div className="relative flex-1 p-4 bg-[#b90124] rounded-l-3xl flex justify-left">
           <div className="relative right-40">
             {" "}

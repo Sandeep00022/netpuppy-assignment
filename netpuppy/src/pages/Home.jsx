@@ -6,6 +6,7 @@ import Awards from "../components/Awards";
 import Ranking from "../components/Ranking";
 import Parents from "../components/Parents";
 import Collaboration from "../components/Collaboration";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Ranking />
       <Parents />
       <Collaboration />
+      <Footer />
     </div>
   );
 };
