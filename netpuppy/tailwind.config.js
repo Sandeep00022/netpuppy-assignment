@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        miltonian: ["Miltonian", "sans-serif", "Mirador"],
+        miltonian: ["Miltonian", "sans-serif"],
+        mirador: ["Mirador", "sans-serif"],
       },
     },
   },
