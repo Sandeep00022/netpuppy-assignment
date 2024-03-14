@@ -10,7 +10,7 @@ const Footer = () => {
           <h2 className=" text-3xl font-bold text-[#b90124] ml-20">FOCUS</h2>
         </div>
         <div className="flex justify-center items-center gap-6 sm:gap-20">
-          <div>
+          <div >
             <p>- FAQ</p>
             <p>- Calendar</p>
             <p>- E-Prospectus</p>
@@ -34,7 +34,8 @@ const Footer = () => {
           alt=""
         />
         <div className="absolute  bottom-10 ml-5">
-          <div className="flex flex-col mb-4 items-center p-2">
+         <div className="hidden sm:block">
+         <div className="flex flex-col mb-4 items-center p-2">
             <h3 className="text-xl mr-40 font-semibold">
               BECOME A PART OF THE...
             </h3>
@@ -49,11 +50,12 @@ const Footer = () => {
           <p className="text-center mt-3">
             (+91) 9458311000 <span className="ml-20">info@tis.edu.in</span>{" "}
           </p>
+         </div>
           <div className="flex gap-8 flex-col sm:flex-row justify-center mt-20 sm:mt-4 items-center">
-            <button className="p-3 bg-[#b90124] text-white">
+            <button className="p-3 hidden sm:block bg-[#b90124] text-white">
               VIRTUAL TOUR
             </button>
-            <button className="p-3 bg-[#b90124] text-white">APPLY NOW</button>
+            <button className="p-3 hidden sm:block bg-[#b90124] text-white">APPLY NOW</button>
             <button className="p-3 bg-[#b90124] text-white">
               fedena LOGIN
             </button>

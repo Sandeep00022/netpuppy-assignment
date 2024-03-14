@@ -63,7 +63,7 @@ const Top = () => {
               />
 
               <div className="absolute bottom-10 ml-5">
-                <h3 className="text-xl font-bold text-white">Swimming</h3>
+                <h3 className="text-xl font-bold text-white">Taekwondo</h3>
                 <p className="text-white">22 Acres, pollution-Free,</p>
                 <p className="text-white">World-Class</p>
               </div>
@@ -81,7 +81,7 @@ const Top = () => {
               />
 
               <div className="absolute bottom-10 ml-5">
-                <h3 className="text-xl font-bold text-white">Swimming</h3>
+                <h3 className="text-xl font-bold text-white">Horse Riding</h3>
                 <p className="text-white">22 Acres, pollution-Free,</p>
                 <p className="text-white">World-Class</p>
               </div>

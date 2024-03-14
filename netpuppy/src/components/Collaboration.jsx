@@ -12,12 +12,12 @@ import col55 from "../assets/collab/col55.png";
 
 const Collaboration = () => {
   return (
-    <div className="flex  items-center flex-col sm:flex-row justify-between text-wrap ">
-      <div className="bg-[#b90124] p-3 relative rounded-r-full">
-        <h3 className="absolute font-mirador text-white right-[-115px] text-3xl font-bold italic mb-3">
-          COLLABO<span className="text-[#b90124]">RATIONS</span>
+    <div className="flex items-center flex-col sm:flex-row justify-between text-wrap ">
+      <div className="bg-[rgb(185,1,36)] p-3 relative rounded-r-full">
+        <h3 className="absolute font-mirador text-white right-[-10px] sm:right-[-115px] text-3xl font-bold italic mb-3">
+          COLLABO<span className="text-black sm:text-[#b90124]">RATIONS</span>
         </h3>
-        <p className="mt-9 text-sm absolute right-[-118px]">12+ Collaborations </p>
+        <p className="mt-9 text-sm absolute static sm:right-[-118px]">12+ Collaborations </p>
         <p className="text-white mt-16">What stands out to us is the school's</p>
         <p className="text-white">emphasis on individualized attention. Our</p>
         <p className="text-white">child's teachers have been attentive</p>

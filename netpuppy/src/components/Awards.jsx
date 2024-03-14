@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import blog from "../assets/awards/blog.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import award1 from "../assets/awards/award1.png";
 import award2 from "../assets/awards/award2.png";
 import award3 from "../assets/awards/award3.png";
 import knowmore from "../assets/topImages/knowmore.png";
+import AnimatedNumber from "react-animated-numbers";
 import { Button } from "flowbite-react";
 const Awards = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [currentNumber, setCurrentNumber] = useState(100);
+  const [currentNumber1, setCurrentNumber1] = useState(20);
+  const [currentNumber2, setCurrentNumber2] = useState(60);
+  const [currentNumber3, setCurrentNumber3] = useState(15);
+  const targetNumber = 100;
+  const targetNumber1 = 20;
+  const targetNumber2 = 60;
+  const targetNumber3 = 15;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="">
       <div className="relative">
@@ -26,23 +49,70 @@ const Awards = () => {
           <h2 className=" text-3xl font-bold text-white ml-20">VIRTUAL TOUR</h2>
         </div>
         <div
-          className="absolute bottom-0 w-[90%] p-6 m-auto left-0 right-0 flex 
+          className="absolute bottom-0 w-[90%]  p-6 m-auto left-0 right-0 flex 
            justify-center rounded-md bg-[#b90124] gap-3 -mb-40 sm:-mb-20 overflow:hidden"
         >
-          <div className="text-center text-white p-5 border-r border-white">
-            <h2 className="text-3xl font-bold"> 100%</h2>
+          <div className="text-center hidden sm:block text-white p-5 border-r border-white">
+            <h2 className="text-3xl flex justify-center font-bold">
+              {" "}
+              {scrollY >= 2200 ? (
+                <AnimatedNumber
+                  number={currentNumber}
+                  animateToNumber={`${targetNumber}`}
+                  formatter={(val) => val.toFixed(0)}
+                />
+              ) : (
+                currentNumber
+              )}{" "}
+              %
+            </h2>
             <p className="text-xs">college Acceptance</p>
           </div>
           <div className="text-center text-white p-5 border-r border-white">
-            <h2 className="text-3xl font-bold">20</h2>
+            <h2 className="text-3xl flex justify-center font-bold">
+              {" "}
+              {scrollY >= 2200 ? (
+                <AnimatedNumber
+                  number={currentNumber1}
+                  animateToNumber={`${targetNumber1}`}
+                  formatter={(val) => val.toFixed(0)}
+                />
+              ) : (
+                currentNumber1
+              )}{" "}
+            </h2>
             <p className="text-xs">Years of Educational Excellence</p>
           </div>
           <div className="text-center text-white p-5 border-r border-white">
-            <h2 className="text-3xl font-bold">60%</h2>
+            <h2 className="text-3xl flex justify-center font-bold">
+              {" "}
+              {scrollY >= 2200 ? (
+                <AnimatedNumber
+                  number={currentNumber2}
+                  animateToNumber={`${targetNumber2}`}
+                  formatter={(val) => val.toFixed(0)}
+                />
+              ) : (
+                currentNumber2
+              )}{" "}
+              %
+            </h2>
             <p className="text-xs">STEM Program Participation</p>
           </div>
           <div className="text-center text-white p-5 ">
-            <h2 className="text-3xl font-bold">15+</h2>
+            <h2 className="text-3xl justify-center flex font-bold">
+              {" "}
+              {scrollY >= 2200 ? (
+                <AnimatedNumber
+                  number={currentNumber3}
+                  animateToNumber={`${targetNumber3}`}
+                  formatter={(val) => val.toFixed(0)}
+                />
+              ) : (
+                currentNumber3
+              )}{" "}
+              +
+            </h2>
             <p className="text-xs">Extracurricular Activities</p>
           </div>
         </div>
@@ -71,9 +141,12 @@ const Awards = () => {
             />
 
             <div className="absolute bottom-10 ml-5">
-              <h3 className="text-xl font-bold text-white">Swimming</h3>
-              <p className="text-white">22 Acres, pollution-Free,</p>
-              <p className="text-white">World-Class</p>
+              <h3 className="text-xl font-bold text-white">
+                Best Residential School in{" "}
+              </h3>
+              <h3 className="text-xl font-bold text-white">
+                Uttarakhand, India{" "}
+              </h3>
             </div>
           </div>
           <Button
@@ -109,9 +182,12 @@ const Awards = () => {
               />
 
               <div className="absolute bottom-10 ml-5">
-                <h3 className="text-xl font-bold text-white">Swimming</h3>
-                <p className="text-white">22 Acres, pollution-Free,</p>
-                <p className="text-white">World-Class</p>
+                <h3 className="text-xl font-bold text-white">
+                  Top Boarding School in{" "}
+                </h3>
+                <h3 className="text-xl font-bold text-white">
+                  Uttarakhand, India{" "}
+                </h3>
               </div>
             </div>
             <div className="p-1 relative self-bottom">
@@ -127,9 +203,10 @@ const Awards = () => {
               />
 
               <div className="absolute bottom-10 ml-5">
-                <h3 className="text-xl font-bold text-white">Swimming</h3>
-                <p className="text-white">22 Acres, pollution-Free,</p>
-                <p className="text-white">World-Class</p>
+                <h3 className="text-xl font-bold text-white">
+                  International School Award,{" "}
+                </h3>
+                <h3 className="text-xl font-bold text-white">India 2019 </h3>
               </div>
             </div>
           </div>

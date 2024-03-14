@@ -5,7 +5,7 @@ const Ranking = () => {
   return (
     <div className="bg-[#f8f5f0] mt-10">
       <div className="p-9 flex flex-col sm:flex-row justify-center items-center gap-5">
-        <div className="flex  flex-col shadow-4xl justify-center items-center p-10 border border-2 border-[#b90124] rounded-xl">
+        <div className="flex bg-white shadow-2xl flex-col shadow-4xl justify-center items-center p-10 border border-2 border-[#b90124] rounded-xl">
           <LiaTrophySolid className="text-[#b90124]" size={"80"} />
           <div>
             <h4 className="italic text-xl text-[#b90124] font-semibold">
@@ -14,31 +14,28 @@ const Ranking = () => {
             <p className="text-xs ">Top Boarding School</p>
           </div>
         </div>
-        <img
-           className="h-14 "
-           src={rightarrow}
-           alt=""
-        />
+        <img className="h-14 " src={rightarrow} alt="" />
         <div className="flex flex-1 flex-col sm:flex-row gap-8">
-          <div className="bg-[#b90124] text-white flex flex-col rounded-md justify-center items-center p-10">
+          <div className="bg-[#b90124] shadow-2xl hover:cursor-pointer text-white flex flex-col rounded-md justify-center items-center p-10">
             <h2 className="font-miltonian text-4xl">#1</h2>
             <h4 className="text-lg italic font-semibold">In Dehradun</h4>
             <p className="text-sm">
               Co-Educational Boarding School in Dehradun by Education Today 2020
             </p>
           </div>
-          <div className="bg-[#b90124] text-white flex flex-col rounded-md justify-center items-center p-10">
-            <h2 className="font-miltonian text-4xl">#1</h2>
-            <h4 className="text-lg italic font-semibold">In Dehradun</h4>
+          <div className="bg-[#b90124] shadow-2xl hover:cursor-pointer text-white flex flex-col rounded-md justify-center items-center p-10">
+            <h2 className="font-miltonian text-4xl">#2</h2>
+            <h4 className="text-lg italic font-semibold">In Uttarakhand</h4>
             <p className="text-sm">
-              Co-Educational Boarding School in Dehradun by Education Today 2020
+              Co-Educational Boarding School in North India by Education Today
+              2020
             </p>
           </div>
-          <div className="bg-[#b90124] text-white flex flex-col rounded-md justify-center items-center p-10">
-            <h2 className="font-miltonian text-4xl">#1</h2>
-            <h4 className="text-lg italic font-semibold">In Dehradun</h4>
+          <div className="bg-[#b90124] shadow-2xl hover:cursor-pointer  text-white flex flex-col rounded-md justify-center items-center p-10">
+            <h2 className="font-miltonian text-4xl">#4</h2>
+            <h4 className="text-lg italic font-semibold">In India</h4>
             <p className="text-sm">
-              Co-Educational Boarding School in Dehradun by Education Today 2020
+              Co-Educational Boarding School in India by Education Today 2020
             </p>
           </div>
         </div>

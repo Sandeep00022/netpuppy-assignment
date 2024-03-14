@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import whytis from "../assets/whytis/whytis.jpg";
 import { LuSchool } from "react-icons/lu";
 import { GrUserExpert } from "react-icons/gr";
 import { FaUsersGear } from "react-icons/fa6";
 
+
 const WhyTis = () => {
+ 
+
   return (
     <div className="p-9">
       <div className="text-center">

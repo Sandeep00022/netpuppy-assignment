@@ -7,10 +7,12 @@ import Ranking from "../components/Ranking";
 import Parents from "../components/Parents";
 import Collaboration from "../components/Collaboration";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
     <div className="xl:w-[70%] m-auto">
+      <Header/>
       <Top />
       <Youtube />
       <WhyTis />
